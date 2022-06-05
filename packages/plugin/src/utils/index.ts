@@ -14,7 +14,7 @@ const LIMIT = cpus().length - 1
 const cleanCSS = new CleanCSS()
 
 export const IVIEW_CSS_TAG = `<link rel="stylesheet" type="text/css" href="//unpkg.com/view-design@4.7.0/dist/styles/iview.css" />`
-export const ANIMATECSS_TAG = `<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />`
+export const ANIMATECSS_TAG = `<link rel="stylesheet" href="/animate.min.css" />`
 export const IVIEW_JS_TAG = `<script type="text/javascript" src="//unpkg.com/view-design@4.7.0/dist/iview.min.js"></script>`
 
 export const STORAGE_KEY = '__vuepress_posts_encrypt_plugin__'
