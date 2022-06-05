@@ -44,20 +44,20 @@
           <i-form @submit.native.prevent ref="formInline" :model="formInline" :rules="ruleInline">
             <Row type="flex" justify="center" align="top" style="margin-bottom: 20px;">
               <i-col>
-                <Icon type="md-lock" size="60" />
+                <img src="https://youdoc.gitee.io/img/qrcode_for_gh.jpg" />
               </i-col>
             </Row>
             <form-item prop="password">
-              <i-input password size="large" type="password" @on-enter="() => handleSubmit()"
-                v-model="formInline.password" placeholder="密码">
+              <i-input size="large" type="password" @on-enter="() => handleSubmit()" v-model="formInline.password"
+                placeholder="密码">
               </i-input>
-              <div style="margin-top: 25px;" class="ivu-form-item-error-tip">
-                创作不易，禁止爬虫访问。请关注下方公众号，获取「<b>密码</b>」阅读。谢谢大家的配合！</div>
+              <div style="margin-top: 25px;font-size: medium;line-height:30px;" class="ivu-form-item-error-tip">
+                创作不易，禁止爬虫访问。请扫描上方二维码关注公众号，免费获取阅读「<b>密码</b>」。谢谢大家的配合！</div>
             </form-item>
           </i-form>
         </div>
       </div>
-      <img src="https://youdoc.gitee.io/img/qrcode_for_gh.jpg" />
+      <div id="footer" style="height: 100px;"></div>
     </div>
   </div>
   <!-- crypto js -->
