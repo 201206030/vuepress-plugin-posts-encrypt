@@ -40,9 +40,9 @@
         </div>
       </div>
       <div id="body">
-        <div ref="formRef" :class="'center ' + lockClass">
+        <div ref="formRef" :class="'center ' + lockClass" style="padding-top:1rem">
           <i-form @submit.native.prevent ref="formInline" :model="formInline" :rules="ruleInline">
-            <Row type="flex" justify="center" align="top" style="margin-bottom: 20px;">
+            <Row type="flex" justify="center" align="top" style="margin-bottom: 1rem;">
               <i-col>
                 <img src="https://youdoc.gitee.io/resource/images/qrcode_for_gh.jpg" />
               </i-col>
@@ -51,14 +51,38 @@
               <i-input size="large" type="password" @on-enter="() => handleSubmit()" v-model="formInline.password"
                 placeholder="密码">
               </i-input>
-              <div style="margin-top: 25px;font-size: medium;line-height:30px;" class="ivu-form-item-error-tip">
-                扫上方二维码关注公众号<b>免费</b>获取阅读<b>「密码」</b>。<br />
-                创作不易，拒绝爬虫访问。谢谢大家的配合！</div>
+
             </form-item>
+            <Row>
+              <i-col>
+                <div style="font-size: medium;line-height:30px;color: #ed4014;">
+                  扫上方二维码关注公众号<b>免费</b>获取阅读<b>「密码」</b>。<br />
+                  创作不易，拒绝爬虫访问。谢谢大家的配合！
+                </div>
+              </i-col>
+            </Row>
+
+            <div style="margin-top: 1rem;">
+              <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7927582798443371"
+                crossorigin="anonymous"></script>
+              <!-- 自适应广告 -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7927582798443371"
+                data-ad-slot="7569295149" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+            </div>
+
           </i-form>
+
         </div>
       </div>
-      <div id="footer" style="height: 100px;"></div>
+      <div id="footer">
+
+      </div>
+
     </div>
   </div>
   <!-- crypto js -->
