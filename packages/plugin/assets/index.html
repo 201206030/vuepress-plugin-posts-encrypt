@@ -45,7 +45,9 @@
             <Row type="flex" justify="center" align="top" style="margin-bottom: 1rem;">
               <i-col>
                 <img src="https://youdoc.gitee.io/resource/images/qrcode_for_gh.jpg" />
+                
               </i-col>
+              <i-col style="color: #ed4014;">微信扫一扫关注公众号免费获取阅读密码！</i-col>
             </Row>
             <form-item prop="password">
               <i-input size="large" type="password" @on-enter="() => handleSubmit()" v-model="formInline.password"
@@ -53,13 +55,6 @@
               </i-input>
 
             </form-item>
-            <Row>
-              <i-col>
-                <div style="font-size: medium;line-height:30px;color: #ed4014;">
-                  微信扫上方二维码关注公众号<b>免费</b>获取阅读<b>「密码」</b>。<br />
-                </div>
-              </i-col>
-            </Row>
 
             <div style="margin-top: 1rem;">
               <script async
